@@ -51,6 +51,10 @@ nav li a{
     text-decoration: none;
 }
 nav li a:hover{
+    background-color: #1b9bff;
+    transition: .5s;
+}
+nav li a:hover{
     color: rgb(127, 127, 128);
     transition: all 0.4s ease 0s;
 }
@@ -83,7 +87,71 @@ nav li a:hover{
 .btni:hover {
     background: #717374;
 }
+.checkbtn{
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+    float: right;
+}
+#check{
+    display: none;
+}
 
+@media screen and (max-width:480px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: cadetblue;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+        text-align: center;
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }    
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .section p{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 767px){
+}
+@media screen and (max-width: 1024px){
+    nav .logo p{
+        font-size: 23px;
+        
+    }
+    nav ul li a{
+        font-size: 16px;
+        padding-left: 10px;
+        margin: 0;
+    }
+    .section{
+        margin-top: 5%;
+        font-size: 28px;
+    }
+    .btni{
+        padding: 9px 11px;
+        font-size: 14px;
+    }
+}
 
 
 
