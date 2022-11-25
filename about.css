@@ -18,24 +18,25 @@ h1{
     color: #BA3D79;
 }
 nav{
+    /* width: 100%; */
     height: 75px;
     margin-top: 20px;
+    /* line-height: 50px; */
     padding: 0px 100px;
-    display: inline;
 }
 nav .logo a{
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 900;
     float: left;
-    color: #000000;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     cursor: pointer;
     text-decoration: none;
 }
+
 nav ul{
     float: right;
-    margin-top: 0;
 }
 nav li{
     display: inline-block;
@@ -45,18 +46,21 @@ nav li a{
     font-size: 18px;
     text-transform: capitalize;
     padding: 0px 30px;
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 nav li a:hover{
-    color: white;
     background-color: #000000;
+    color: #ffffff;
+    transition: .5s;
+}
+nav li a:hover{
+    color: rgb(255, 255, 255);
     transition: all 0.4s ease 0s;
 }
-
 .btn {
     display: inline-block;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 20px;
     background: #000000;
@@ -66,9 +70,10 @@ nav li a:hover{
     cursor: pointer;
     border: 2px solid #000000;
 }
- .btn:hover {
-    background: white;
-} 
+.btn:hover {
+    background: transparent;
+    color: #000000;
+}
 section{
     position: relative;
     width: 100%;
@@ -97,9 +102,9 @@ section .log{
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    border-radius:5px;
     background-color: #ffffff;
     margin-top: 5%;
+    margin-right: 60px;
 }
 .greet{
     font-size: 30px;
@@ -134,4 +139,64 @@ footer li a {
 }
 footer li a:hover {
     color: white;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #ffffff;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media(max-width:550px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
+        top: 80px;
+        left: -100;
+        text-align: center;
+        transition: all 0.5s;
+        display: none;
+    }
+    nav ul li{
+        display: block;
+        margin: 30px 0;
+        line-height: 50px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav ul li a:hover{
+    background-color: #ffffff;
+    color: #000000;
+    transition: .5s;
+    }
+    section{
+        position: relative;
+        width: 100%;
+        display: block;
+    }
+    section .box{
+        position: relative;
+        width: 100%;
+        display: block;
+    }
+    section .box .text{
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-left: 13%;
+        margin-top: 7%;
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    }
 }

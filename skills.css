@@ -24,9 +24,6 @@ nav .logo a{
     letter-spacing: 0.5px;
     cursor: pointer;
 }
-a{
-    text-decoration: none;
-}
 
 nav ul{
     float: right;
@@ -44,6 +41,7 @@ nav li a{
 }
 nav li a:hover{
     background-color: #000000;
+    color: #ffffff;
     transition: .5s;
 }
 nav li a:hover{

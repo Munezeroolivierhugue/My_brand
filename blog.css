@@ -146,6 +146,11 @@ nav li a:hover{
     color: #f33c3c;
     transition: all ease 0.3s;
 }
+.fa-regular{
+    color: #000000;
+    padding-right: 10px;
+    cursor: pointer;
+}
 
 footer {
     background: #14181F;
