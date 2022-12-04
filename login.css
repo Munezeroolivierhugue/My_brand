@@ -29,10 +29,14 @@ p{
     font-size: 40px;
 }
 .logo a{
-    font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: 900;
+    float: left;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
     text-decoration: none;
-    color: #000000;
 }
 .text span{
     font-size: 40px;
@@ -41,7 +45,7 @@ p{
 }
 nav{
     height: 55px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 0px 100px;
     background-color: rgb(255, 255, 255);
 }
