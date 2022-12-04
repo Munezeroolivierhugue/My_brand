@@ -7,6 +7,7 @@
     <title>login</title>
     <link rel="stylesheet" href="login.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <nav>
@@ -21,12 +22,16 @@
         </div>
     </div>
     <div class="log">
-    <form action="dashboard.html" >
+    <form action="dashboard.html" class="form" method="post">
+        
         <label>E-mail:</label>
-        <input type="email" placeholder="E-mail" class="user"> <br>
+        <span class="error" style=" color: rgb(255, 0, 0); font-size: 15px; text-align: center;"></span>
+        <input type="email" placeholder="E-mail" class="user" id="email" required> <br>
         <label>password:</label>
-        <input type="password" placeholder="Password" class="pass"> <br>
+        <span class="error" style=" color: rgb(255, 0, 0); font-size: 15px; text-align: center;"></span>
+        <input type="password" placeholder="Password" class="pass" id="password" required> <br>
         <input type="submit" value="login" class="button">
+        
 
     </form>
 </div>
@@ -37,5 +42,6 @@
       <li><a href="contact.html">Contacts</a></li>
     </ul>
 </footer> 
+<script src="login.js"></script>
 </body>
 </html>

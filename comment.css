@@ -10,7 +10,7 @@
 nav{
     /* width: 100%; */
     height: 75px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     /* line-height: 50px; */
     padding: 0px 100px;
 }
@@ -78,7 +78,7 @@ nav li a:hover{
 .comment-box p{
     text-align: left;
     font-size: 28px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 .comment-form input, .comment-form textarea{
     width: 100%;
@@ -99,6 +99,22 @@ nav li a:hover{
     border-radius: 3px;
     color: #ffffff;
 }
-.comment-form button{
-    background-color: #929292;
+.comment-form button:hover{
+    background-color: rgb(179, 177, 177);
+    color: #ffffff;
+}
+.comment-section{
+    width: 50%;
+    margin: 50px auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 25px;
+    margin-left: 25%;
+    margin-top: 10px;
+}
+.comment-section .user .fa-solid{
+    border-radius: 50%;
+    margin: 10px;
+    border: 1px solid #000000;
+    padding: 10px;
 }

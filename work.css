@@ -125,10 +125,7 @@ nav li a:hover{
     font-weight: 500;
     color: #363636;
 }
-.blog-text .blog-title:hover{
-    color: #f33c3c;
-    transition: all ease 0.3s;
-}
+
 .blog-text p{
     color: #9b9b9b;
     font-size: 15px;

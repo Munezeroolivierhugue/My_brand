@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="edit.css">
+    <title>edit & add</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+           <a href="home.html">Hugue.ol</a>
+        </div>
+        <ul>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a class="btn" href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+    <section>
+        <div class="comment-box">
+            <p>edit blog</p>
+            <form class="comment-form">
+                <input type="text" placeholder="title" name="title" class="title">
+                <input type="file" placeholder="image only" name="image" class="image">
+                <img src="" class="imagesrc">
+                <div class="section">
+                    <div class="row">
+                        <div class="col">
+                            <div class="first box">
+                                <input type="number" id="font-size" min="1" max="100" value="16" onchange="f1(this)">
+                            </div>
+                            <div class="second box">
+                                <button type="button" onclick="f2(this)">
+                                <i class="fa-solid fa-bold"></i>
+                                </button>
+                                <button type="button" onclick="f3(this)">
+                                    <i class="fa-solid fa-italic"></i>
+                                    </button>
+                                    <button type="button" onclick="f4(this)">
+                                        <i class="fa-solid fa-underline"></i>
+                                        </button>
+                            </div>
+                            <div class="third box">
+                                <button type="button" onclick="f5(this)">
+                                <i class="fa-solid fa-align-left"></i>
+                                </button>
+                                <button type="button" onclick="f6(this)">
+                                <i class="fa-solid fa-align-center"></i>
+                                </button>
+                                <button type="button" onclick="f7(this)">
+                                <i class="fa-solid fa-align-right"></i>
+                                </button>
+                            </div>
+                            <div class="fourth box">
+                                <button type="button" onclick="f8(this)">
+                                aA
+                                </button>
+                                <button type="button" onclick="f9(this)">
+                                    <i class="fa-solid fa-text-slash"></i>
+                                    </button>
+
+                                    <input type="color" onchange="f10(this)">
+                            </div>
+                        </div><br>
+
+                        <div class="col">
+                            <textarea placeholder="your text here" name="textarea" class="textarea"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+                <button type="submit" class="edit-blog">Edit blog</button><br>
+                <a href="dashboard.html">go back</a>
+            </form>
+        </div>
+    </section>
+    <script src="edit.js"></script>
+</body>
+</html>
